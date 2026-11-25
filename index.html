@@ -3,40 +3,136 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tayang Studio — Policies</title>
+<title>Tayang Studio — make short videos, post them everywhere</title>
+<meta name="description" content="Tayang Studio is a Windows desktop app that turns long videos into short vertical clips and publishes them to your own YouTube, Facebook, and TikTok accounts.">
 <style>
   :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; background: #faf9f7; color: #1c1917; }
-  main { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
-  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
-  h2 { font-size: 20px; margin: 40px 0 8px; }
-  p, li { color: #44403c; }
-  .meta { color: #78716c; font-size: 14px; margin-bottom: 32px; }
-  nav a { margin-right: 16px; }
   a { color: #0f766e; }
-  ul { padding-left: 20px; }
-  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid #e7e5e4; color: #78716c; font-size: 14px; }
+  header { border-bottom: 1px solid #e7e5e4; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; padding-bottom: 18px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 650; letter-spacing: -0.01em; }
+  .mark { width: 34px; height: 34px; border-radius: 9px; background: #1c1917; display: grid; place-items: center; color: #f97316; font-weight: 800; }
+  nav a { margin-left: 18px; text-decoration: none; color: #44403c; font-size: 14px; }
+  nav a:hover { color: #0f766e; }
+  main { max-width: 880px; margin: 0 auto; padding: 64px 24px 96px; }
+  h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.1; letter-spacing: -0.03em; margin: 0 0 16px; }
+  .lead { font-size: 19px; color: #57534e; max-width: 640px; margin: 0 0 32px; }
+  .cta { display: inline-block; background: #1c1917; color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 10px; font-weight: 600; }
+  .cta:hover { background: #292524; }
+  .note { color: #78716c; font-size: 14px; margin-top: 12px; }
+  section { margin-top: 64px; }
+  h2 { font-size: 24px; letter-spacing: -0.01em; margin: 0 0 8px; }
+  .sub { color: #57534e; margin: 0 0 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: #fff; border: 1px solid #e7e5e4; border-radius: 14px; padding: 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 16px; }
+  .card p { margin: 0; color: #57534e; font-size: 15px; }
+  ol { padding-left: 20px; }
+  ol li { margin-bottom: 10px; color: #44403c; }
+  details { border-top: 1px solid #e7e5e4; padding: 14px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 8px 0 0; color: #57534e; }
+  footer { border-top: 1px solid #e7e5e4; margin-top: 72px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 24px; color: #78716c; font-size: 14px; }
+  footer a { color: #57534e; margin-left: 16px; }
 </style>
 </head>
 <body>
+<header>
+  <div class="wrap">
+    <div class="brand"><span class="mark">T</span> Tayang Studio</div>
+    <nav>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <h1>Tayang Studio</h1>
-  <p class="meta">Desktop video app for Windows · Personal project by Dimas Firmansyah · Effective 25 November 2026</p>
-  <nav><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+  <h1>Long videos in. Short clips out. Posted where you publish.</h1>
+  <p class="lead">Tayang Studio is a Windows desktop app for creators. It finds the best moments in a long video, cuts them into captioned vertical clips, and uploads them to your own YouTube channel, Facebook Page, or TikTok profile.</p>
+  <a class="cta" href="#how">See how it works</a>
+  <p class="note">Windows 10 and 11 · Your files stay on your computer</p>
 
-  <h2>What Tayang Studio is</h2>
-  <p>Tayang Studio is a desktop application that helps a creator turn long videos into short vertical clips, render them on the creator's own computer, and — when the creator connects an account — upload the result to that creator's own YouTube channel, Facebook Page, or TikTok profile.</p>
+  <section>
+    <h2>What it does</h2>
+    <p class="sub">One workspace from raw recording to a published clip.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Autoclip</h3>
+        <p>Paste a YouTube link and get 58–120 second vertical clips with burned-in captions, framed for Shorts, Reels, and TikTok.</p>
+      </div>
+      <div class="card">
+        <h3>Autopilot</h3>
+        <p>Describe a series once. Tayang writes, renders, and schedules each episode, then posts it on the days you picked.</p>
+      </div>
+      <div class="card">
+        <h3>Post everywhere</h3>
+        <p>Connect your own accounts with each platform's official login. Multi-account, per-post privacy, and no re-uploading by hand.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>TikTok integration</h2>
-  <p>The app uses TikTok's official Login Kit and Content Posting API. A creator signs in on TikTok's own website, approves the <code>user.info.basic</code> and <code>video.publish</code> scopes, and the app then uploads only the videos the creator explicitly selects. There is no automatic posting without the creator's action or an autopilot schedule they configured themselves.</p>
+  <section id="how">
+    <h2>How it works</h2>
+    <p class="sub">The app renders locally, then uploads through the platform's official API.</p>
+    <ol>
+      <li><strong>Add your source.</strong> A long recording, a project, or a YouTube link.</li>
+      <li><strong>Pick the moments.</strong> The built-in agent proposes hooks and cuts; you approve the list.</li>
+      <li><strong>Render.</strong> Captions, watermark, layout, and loudness are handled on your machine.</li>
+      <li><strong>Publish.</strong> Choose accounts and privacy, then post now or schedule it.</li>
+    </ol>
+  </section>
 
-  <h2>Documents</h2>
-  <ul>
-    <li><a href="terms.html">Terms of Service</a> — the rules for using the app.</li>
-    <li><a href="privacy.html">Privacy Policy</a> — what data the app handles and how to delete it.</li>
-  </ul>
+  <section>
+    <h2>Your accounts, your rules</h2>
+    <p class="sub">Tayang Studio never asks for a platform password. Each connection uses the platform's own authorisation screen, and tokens are stored in Windows Credential Manager on your PC.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>YouTube</h3>
+        <p>Upload as a Short or a standard 16:9 video, to one or many channels you manage.</p>
+      </div>
+      <div class="card">
+        <h3>Facebook</h3>
+        <p>Publish to Pages as a Reel when vertical, or as a normal Page video.</p>
+      </div>
+      <div class="card">
+        <h3>TikTok</h3>
+        <p>Direct Post through the Content Posting API, with the privacy level you choose.</p>
+      </div>
+    </div>
+  </section>
 
-  <footer>Contact: <a href="https://github.com/dimasbagas/tayang-policies/issues">open an issue</a>.</footer>
+  <section id="faq">
+    <h2>Questions</h2>
+    <details>
+      <summary>Does my video leave my computer?</summary>
+      <p>Only when you post it. Rendering and clipping happen locally. The finished file is uploaded straight to the platform you selected.</p>
+    </details>
+    <details>
+      <summary>Do I need a Tayang account?</summary>
+      <p>No. The free posting routes use your own platform apps and accounts. Optional cloud features are separate.</p>
+    </details>
+    <details>
+      <summary>Can I manage more than one account?</summary>
+      <p>Yes. Connect as many YouTube channels, Facebook Pages, or TikTok profiles as you are allowed to manage, and pick per post.</p>
+    </details>
+    <details>
+      <summary>What does the app store about me?</summary>
+      <p>Account names and tokens on your device, and nothing else unless you turn on anonymous analytics. See the <a href="privacy.html">Privacy Policy</a>.</p>
+    </details>
+  </section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Tayang Studio · A personal project by Dimas Firmansyah</span>
+    <span><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></span>
+  </div>
+</footer>
 </body>
 </html>
